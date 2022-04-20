@@ -49,6 +49,11 @@ body {
   width: 1200px;
   padding: 0;
 }
+@media (max-width: 360px) {
+  .container {
+    width: 320px;
+  }
+}
 header {
   display: flex;
   background-color: #B9AC92;
@@ -97,6 +102,27 @@ header {
   font-weight: 300;
   font-size: 20px;
   line-height: calc(27/20*100%);
+}
+.icon-menu {
+  display: none;
+}
+@media (max-width: 360px) {
+  .component-left .menu-list {
+    display: none;
+  }
+  .icon-menu {
+    display: flex;
+  }
+  .like-basket {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    width: 32vw;
+  }
+  .number-phone {
+    font-size: 10px;
+    line-height: calc(27/20*100%);
+  }
 }
 footer {
   background-color: #B9AC92;

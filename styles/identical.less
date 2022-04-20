@@ -8,10 +8,18 @@
 @color-brand3: #968F82;
 
 
+@mobile: ~"(max-width: 360px)";
+// Mode: Tablet
+@tablet: ~"(min-width: 768px)";
+@tablet-area: 750px;
+
+// Mode: Desktop
+@desktop: ~"(min-width: 1024px)";
+@desktop-area: 970px;
+
 * {
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
-  //font-size: 20px;
   color: @color-brand1;
 }
 
@@ -24,4 +32,9 @@ body {
   width: 1200px;
   padding: 0;
 }
-
+@media @mobile {
+  .container{
+    width: 320px
+  }
+  
+}
