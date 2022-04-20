@@ -49,7 +49,7 @@ body {
   width: 1200px;
   padding: 0;
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .container {
     width: 320px;
   }
@@ -106,7 +106,7 @@ header {
 .icon-menu {
   display: none;
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .component-left .menu-list {
     display: none;
   }
@@ -365,7 +365,7 @@ input[type="email"] {
 ::-webkit-input-placeholder {
   color: #B9AC92;
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .first {
     padding: 1% 0;
     height: 52vh;
