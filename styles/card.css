@@ -1,0 +1,305 @@
+@import "removal.css";
+@import "bootstrap-grid.min.css";
+@import "icons.css";
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0OIpQlx3QUlC5A4PNjhjRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjThZlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0IIpQlx3QUlC5A4PNb4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjFhdlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjOhBlYw.ttf) format('truetype');
+}
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  color: #412F0E;
+}
+body {
+  background-color: #ECECEC;
+}
+.container {
+  background: none;
+  width: 1200px;
+  padding: 0;
+}
+header {
+  display: flex;
+  background-color: #B9AC92;
+  height: 10vh;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu {
+  margin: 0 0 0 2.5vw;
+}
+.component-left .menu-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.menu-item:not(:last-child) {
+  margin: 0 2.5vw 0 0;
+}
+.menu-link {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: calc(34 / 25 * 100%);
+}
+.component-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.component-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.like-basket {
+  font-size: 40px;
+  margin-left: 0.5vw;
+}
+.component-right a {
+  margin-left: 0.3vw;
+}
+.number-phone {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(27/20*100%);
+}
+footer {
+  background-color: #B9AC92;
+  flex-direction: row;
+  padding: 7vh 0;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 40px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 4vh;
+}
+footer a {
+  margin: 0.7vh 0;
+}
+footer nav,
+.like-cart,
+.data,
+.e-mail {
+  display: inline-flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 3vh;
+}
+.contact a {
+  margin: 0 0.5vw;
+}
+.e-mail a {
+  margin-bottom: 0.3vh;
+}
+.icon-facebook,
+.icon-instagram,
+.icon-telegram {
+  font-size: 40px;
+}
+input[type="email"] {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 2% 3%;
+  width: 100%;
+  background: #D9D9D9;
+}
+.back {
+  margin: 2vh 0;
+}
+.back a {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #968F82;
+}
+.info {
+  margin: 2% 0;
+}
+.text-info {
+  padding-top: 5%;
+  padding-left: 3%;
+}
+.title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  width: 25vw;
+}
+.women,
+.men {
+  width: 6.5vw;
+  margin: 0 0.5vw;
+}
+.category h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30.2198px;
+  line-height: 41px;
+  color: #000000;
+}
+.category .women .rectangle {
+  background: #D9D9D9;
+}
+.category .men .rectangle {
+  background: #968F82;
+}
+.category .rectangle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+  color: #000000;
+  padding: 0.5vh 0;
+}
+.price {
+  display: flex;
+  margin: 10% 0;
+}
+.price h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #968F82;
+}
+.price h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  margin-left: 1vw;
+}
+.cart-like {
+  display: flex;
+}
+.cart-like button {
+  background: none;
+  border: 1.5px solid #412F0E;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 47px;
+  line-height: 64px;
+  padding: 0.2vh 4vw;
+}
+.like {
+  margin-left: 0.7vw;
+}
+.icon-favorite {
+  font-size: 70px;
+}
+.description {
+  margin-bottom: 2%;
+  width: 50%;
+}
+.description h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #968F82;
+}
+.description h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+}
+.photo3 {
+  margin-top: 1.5%;
+  width: 100%;
+}
+.other {
+  margin: 5% 0;
+  width: 100%;
+}
+.other-lines {
+  margin: 3vh 0;
+  display: flex;
+  align-items: center;
+}
+hr {
+  border: none;
+  border-top: 3px solid #968F82;
+  width: 5vw;
+}
+.other h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  margin: 0 0.7vw;
+}
+.product-info {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.offers a {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  width: 50%;
+}
+.offers h4 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+}
+.offers button {
+  background: none;
+  border: 1px solid #412F0E;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 41px;
+}
+/*# sourceMappingURL=card.css.map */

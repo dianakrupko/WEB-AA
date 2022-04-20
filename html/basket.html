@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/basket.css">
+    <title>Basket</title>
+</head>
+<body>
+<header>
+    <div class="header-container container">
+        <div class="component-left">
+            <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
+            <nav class="header-menu menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">Головна</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="catalog.html" class="menu-link">Каталог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="component-right">
+            <a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a>
+            <div class="like-basket">
+                <a href="favorite.html"><i class="icon-like"></i></a>
+                <a href="basket.html"><i class="icon-basket"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="back">
+            <a href="#"><i class="icon-arrow-left"></i>Назад</a>
+        </div>
+        <div class="name-page">
+            <hr>
+            <h1>Корзина</h1>
+            <hr>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="../img/basket/image1.png" alt="">
+                <div class="description">
+                    <a href="card.html">The rose plum</a>
+                    <div class="number">
+                        <span>-</span>
+                        <div class="square">1</div>
+                        <span>+</span>
+                    </div>
+                    <h4>850грн</h4>
+                    <button>Видалити</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/basket/image2.png" alt="">
+                <div class="description">
+                    <a href="card.html">Cocoa vanilla</a>
+                    <div class="number">
+                        <span>-</span>
+                        <div class="square">1</div>
+                        <span>+</span>
+                    </div>
+                    <h4>950грн</h4>
+                    <button>Видалити</button>
+                </div>
+            </div>
+        </div>
+        <div class="total-price">
+            <div class="total-price-line">
+                <hr>
+            </div>
+            <div class="total-price-row">
+                <p>Всього:</p>
+                <span>1700 грн</span>
+            </div>
+        </div>
+        <div class="ordering">
+            <form action="#" method="post" enctype="multipart/form-data"></form>
+            <div class="ordering-data">
+                <h2>Дані для оформлення замовлення</h2>
+                <label>
+                    <input type="text" name="name" placeholder="ПІБ">
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Номер телефону">
+                </label>
+            </div>
+            <div class="delivery">
+                <h2>Доставка</h2>
+                <label>
+                    <p><input checked type="radio" name="delivery">Нова пошта (відділення)</p>
+                </label>
+                <label>
+                    <p><input type="radio" name="delivery">Нова пошта (кур'єр)</p>
+                </label>
+                <label>
+                    <input type="text" name="city" placeholder="Місто">
+                </label>
+                <label>
+                    <input type="text" name="number-department" placeholder="Номер відділення">
+                </label>
+            </div>
+            <div class="payment">
+                <h2>Оплата</h2>
+                <label>
+                    <p><input checked type="radio" name="payment">Оплата після отримання</p>
+                </label>
+                <label>
+                    <p><input type="radio" name="payment">Оплата онлайн</p>
+                </label>
+            </div>
+            <div class="ordering-button">
+                <button>Оформити замовлення</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <h2>Amazing Aroma</h2>
+        <div>
+            <div class="row">
+                <nav class="col-2">
+                    <a href="index.html">Головна</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="about.html">Про нас</a>
+                </nav>
+                <div class="like-cart col-2">
+                    <a href="favorite.html">Вподобані</a>
+                    <a href="basket.html">Корзина</a>
+                </div>
+                <div class="data col-4">
+                    <a href="mailto:amazin.aroma@gmail.com">amazin.aroma@gmail.com</a>
+                    <a href="tel:+380 97 13 372 11" class="">+380971337671</a>
+                    <a>Київ, вул. Хрещатик, 22</a>
+                </div>
+                <div class="e-mail col-4">
+                    <a>Підпишіться на наші новини</a>
+                    <form class="email-form" action="#" method="post">
+                        <label><input type="email" name="email"
+                                      placeholder="Ведіть ваш e-mail..."></label>
+                    </form>
+                    <div class="contact">
+                        <a class="icon-facebook" target="_blank" href="https://www.facebook.com/"></a>
+                        <a class="icon-instagram" target="_blank" href="https://www.instagram.com/amazing.aroma/"></a>
+                        <a class="icon-telegram" target="_blank" href="https://web.telegram.org/z/"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@import "removal.css";
+@import "bootstrap-grid.min.css";
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  color: #412F0E;
+}
+body {
+  background-color: #ECECEC;
+}
+main {
+  width: 100%;
+  padding: 0 18.75%;
+}
+/*# sourceMappingURL=identical.styles.map */

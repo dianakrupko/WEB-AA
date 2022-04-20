@@ -1,0 +1,97 @@
+@import "removal.css";
+@import "bootstrap-grid.min.css";
+@import "icons.css";
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0OIpQlx3QUlC5A4PNjhjRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjThZlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0IIpQlx3QUlC5A4PNb4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjFhdlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjOhBlYw.ttf) format('truetype');
+}
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  color: #412F0E;
+}
+body {
+  background-color: #ECECEC;
+}
+.container {
+  background: none;
+  width: 1200px;
+  padding: 0;
+}
+header {
+  display: flex;
+  background-color: #B9AC92;
+  height: 10vh;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  margin-left: 2.5vw;
+}
+.menu-item:not(:last-child) {
+  margin: 0 2.5vw 0 0;
+}
+.menu-link {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: calc(34 / 25 * 100%);
+}
+.component-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.component-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.like-basket {
+  font-size: 40px;
+}
+.component-right a {
+  margin-left: 0.3vw;
+}
+.number-phone {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(27/20*100%);
+}
+/*# sourceMappingURL=header.css.map */

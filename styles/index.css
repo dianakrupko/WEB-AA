@@ -1,0 +1,337 @@
+@import "removal.css";
+@import "bootstrap-grid.min.css";
+@import "icons.css";
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0OIpQlx3QUlC5A4PNjhjRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjThZlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0IIpQlx3QUlC5A4PNb4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjFhdlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjOhBlYw.ttf) format('truetype');
+}
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  color: #412F0E;
+}
+body {
+  background-color: #ECECEC;
+}
+.container {
+  background: none;
+  width: 1200px;
+  padding: 0;
+}
+header {
+  display: flex;
+  background-color: #B9AC92;
+  height: 10vh;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu {
+  margin: 0 0 0 2.5vw;
+}
+.component-left .menu-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.menu-item:not(:last-child) {
+  margin: 0 2.5vw 0 0;
+}
+.menu-link {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: calc(34 / 25 * 100%);
+}
+.component-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.component-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.like-basket {
+  font-size: 40px;
+  margin-left: 0.5vw;
+}
+.component-right a {
+  margin-left: 0.3vw;
+}
+.number-phone {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(27/20*100%);
+}
+footer {
+  background-color: #B9AC92;
+  flex-direction: row;
+  padding: 7vh 0;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 40px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 4vh;
+}
+footer a {
+  margin: 0.7vh 0;
+}
+footer nav,
+.like-cart,
+.data,
+.e-mail {
+  display: inline-flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 3vh;
+}
+.contact a {
+  margin: 0 0.5vw;
+}
+.e-mail a {
+  margin-bottom: 0.3vh;
+}
+.icon-facebook,
+.icon-instagram,
+.icon-telegram {
+  font-size: 40px;
+}
+input[type="email"] {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 2% 3%;
+  width: 100%;
+  background: #D9D9D9;
+}
+.first {
+  position: relative;
+  padding: 2% 0;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+.text-info {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10% 0;
+}
+.first h1 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
+}
+.first span {
+  margin: 5% 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+}
+.first button {
+  background: none;
+  border: 2px solid #412F0E;
+  border-radius: 10px;
+  width: 70%;
+  padding: 1% 3%;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+}
+.photo2 {
+  position: absolute;
+  left: 55%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.catalog {
+  padding: 10% 0;
+}
+.catalog-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+.im1 {
+  width: 544px;
+  height: 463px;
+}
+.im2 {
+  width: 544px;
+  height: 463px;
+}
+.catalog p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  width: 200px;
+}
+.catalog h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+}
+.go-to-catalog {
+  display: flex;
+  justify-content: center;
+}
+.go-to-catalog-line {
+  width: 35%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+.go-to-catalog a {
+  font-weight: 500;
+  font-size: 35px;
+}
+.go-to-catalog hr {
+  margin-top: 1%;
+  border: none;
+  border-top: 3px solid #B9AC92;
+  width: 100%;
+}
+.certificate {
+  margin-bottom: 10%;
+}
+.certificate-row {
+  display: flex;
+  margin: 3% 0;
+}
+.certificate-info span {
+  margin-left: 20%;
+  width: 80%;
+}
+.certificate span {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000000;
+  padding: 1.5% 0;
+}
+.certificate-info {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  list-style-type: square;
+  padding-left: 2.5%;
+  width: 47%;
+  margin-right: 10%;
+}
+.list li {
+  padding: 4% 0;
+  color: #968F82;
+  font-size: 35px;
+}
+.go-to-certificate a {
+  font-weight: 500;
+  font-size: 35px;
+  margin: 0 1%;
+}
+.go-to-certificate hr {
+  margin-top: 1%;
+  border: none;
+  border-top: 3px solid #B9AC92;
+  width: 34%;
+  text-align: center;
+}
+.online-consultation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.box {
+  background: #D9D9D9;
+  border: 2px solid #968F82;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 2% 3%;
+}
+.box h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.answer {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 15%;
+}
+.box input[type="tel"] {
+  background: #ECECEC;
+  padding: 3.5% 5%;
+  width: 18vw;
+  border-radius: 0;
+  transition: 0.25s;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #412F0E;
+}
+.box input[type="tel"]:focus {
+  border: 1px solid #968F82;
+}
+.call {
+  background: #B9AC92;
+  padding: 1% 3%;
+}
+.icon-call {
+  font-size: 25px;
+}
+::-webkit-input-placeholder {
+  color: #B9AC92;
+}
+/*# sourceMappingURL=index.css.map */

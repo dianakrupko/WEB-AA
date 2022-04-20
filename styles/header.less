@@ -1,0 +1,61 @@
+@import "identical";
+
+header {
+  display: flex;
+  background-color: @color-brand2;
+  height: 10vh;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu{
+  margin: 0 0 0 2.5vw;
+}
+
+.component-left .menu-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+
+}
+
+.menu-item:not(:last-child) {
+  margin: 0 2.5vw 0 0;
+}
+
+.menu-link {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: calc(34 / 25 * 100%);
+}
+
+.component-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.component-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.like-basket {
+  font-size: 40px;
+  margin-left: 0.5vw;
+}
+
+.component-right a {
+  margin-left: 0.3vw;
+}
+
+.number-phone {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(27/20*100%);
+}
