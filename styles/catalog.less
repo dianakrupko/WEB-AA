@@ -79,6 +79,7 @@ select::-ms-expand {
 
 .catalog-box {
   margin: 2% 0;
+  justify-content: space-between;
 }
 
 .product-info {
@@ -87,7 +88,7 @@ select::-ms-expand {
   justify-content: space-between;
 }
 
-.catalog-box a {
+.product-info a {
   font-weight: 300;
   font-size: 22px;
   line-height: 28px;
@@ -95,13 +96,13 @@ select::-ms-expand {
   width: 50%;
 }
 
-.catalog-box h4 {
+.product-info h4 {
   font-weight: 600;
   font-size: 28px;
   line-height: 39px;
 }
 
-.catalog-box button {
+.product button {
   background: none;
   border: 1px solid @color-brand1;
   width: 100%;
@@ -111,8 +112,10 @@ select::-ms-expand {
   line-height: 41px;
 }
 
-.catalog-box-line {
+.product {
   margin-bottom: 8%;
+  padding: 0;
+  width: 32%;
 }
 
 .more {
@@ -141,4 +144,90 @@ select::-ms-expand {
   font-size: 26px;
   line-height: 36px;
   color: @color-brand3;
+}
+
+@media @mobile {
+
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+
+  .icon-filter {
+    font-size: 15px;
+  }
+
+  .filter span {
+
+    font-size: 10px;
+    line-height: 14px;
+    color: @color-brand3;
+  }
+
+  select {
+    background: url("../img/catalog/ep_arrow-down-mobile.svg") no-repeat calc(100% - 1.2em) 0.8em;
+    border: 0.3px solid @color-brand3;
+    border-radius: 2px;
+    font-size: 9px;
+    line-height: 12px;
+    padding: 0.5vh 2vw;
+    width: 25vw;
+  }
+
+
+
+  .catalog-box .product:last-child {
+    display: none;
+  }
+
+  .product {
+    width: 48%;
+  }
+
+  .product-info a {
+    width: 60%;
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .product-info h4 {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .product button {
+    border: 0.8px solid @color-brand1;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .icon-more {
+    font-size: 10px;
+  }
+
+  .more button {
+    width: 20%;
+    border: 0.8px solid @color-brand3;
+    border-radius: 2px;
+    align-items: center;
+  }
+
+  .more button span {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+
 }

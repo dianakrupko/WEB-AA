@@ -49,6 +49,9 @@ body {
   width: 1200px;
   padding: 0;
 }
+.image {
+  width: 100%;
+}
 @media (max-width: 480px) {
   .container {
     width: 320px;
@@ -223,9 +226,6 @@ input[type="email"] {
 }
 .product {
   width: 26%;
-}
-.image {
-  width: 100%;
 }
 .product-info {
   display: flex;
