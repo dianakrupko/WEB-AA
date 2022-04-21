@@ -178,8 +178,8 @@ input[type="email"] {
 }
 @media (max-width: 480px) {
   footer {
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 15px;
     justify-content: space-between;
   }
   .name-footer {
@@ -196,6 +196,10 @@ input[type="email"] {
     margin-top: 5%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .mail a {
+    font-size: 8px;
+    line-height: 10px;
   }
   input[type="email"] {
     font-size: 6px;
