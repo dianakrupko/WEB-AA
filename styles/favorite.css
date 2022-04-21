@@ -272,8 +272,12 @@ h1 {
     font-size: 18px;
     line-height: 25px;
   }
+  .product-photo {
+    width: 50%;
+  }
   .product-information {
     align-items: flex-start;
+    padding: 4% 0;
   }
   .name-product {
     width: 100%;
@@ -297,7 +301,7 @@ h1 {
   .product button {
     margin-left: 0;
     margin-right: 2%;
-    padding: 0.5vh 2vw;
+    padding: 0.3vh 4vw;
     background: none;
     border: 0.5px solid #968F82;
     box-sizing: border-box;
