@@ -7,6 +7,7 @@
 }
 
 .one {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -14,6 +15,7 @@
 .text-info {
   display: inline-flex;
   flex-direction: column;
+  width: 60%;
   margin: 10% 0;
 }
 
@@ -25,9 +27,11 @@
 
 .first span {
   margin: 5% 0;
+  padding-right: 10%;
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
+  z-index: 50;
 }
 
 .first button {
@@ -39,27 +43,27 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
+  z-index: 60;
 }
-
+.photo1{
+  width: 40%;
+  z-index: 20;
+}
 .photo2 {
-  position: absolute;
-  left: 55%;
-  bottom: 0;
-  transform: translateX(-50%);
+  position: relative;
+  width: 60%;
+  top:-5%;
+  left: 60%;
+  z-index: 30;
 
 }
-
-.catalog {
-  padding: 10% 0;
-
+.photo2-new{
+  display: none;
 }
-
 .catalog-row {
   display: flex;
   justify-content: space-between;
   margin: 2% 0;
-
-
 }
 
 .product {
@@ -73,7 +77,6 @@
 
 .im {
   width: 45.5%;
-  //max-height: 463px;
 }
 
 
@@ -235,42 +238,46 @@
 
 @media @mobile {
   .first {
-    padding: 1% 0;
-    height: 52vh;
+    height: 100%;
+    padding-bottom: 50%;
   }
-
+.text-info{
+  margin: 10% 0;
+}
   .first h1 {
     font-size: 18px;
     line-height: 25px;
   }
 
   .photo1 {
-    position: absolute;
-    right: -10%;
-    top: 10vh;
-    width: 211px;
-    height: 295px;
+    position: relative;
+    display: block;
+    margin-top: 25%;
+    width: 75%;
   }
 
   .photo2 {
     position: absolute;
-    bottom: 6vh;
+    display: block;
+    width: 60%;
     left: 0;
-    transform: translateX(-10%);
-    width: 207px;
-    height: 207px;
+    top:60%;
   }
 
   .first span {
+    position: absolute;
+    top:15%;
     font-size: 15px;
     line-height: 20px;
+    padding-right: 0;
     width: 55%;
     z-index: 50;
   }
 
   .first button {
     position: absolute;
-    bottom: 0;
+    top: 125%;
+
     left: 50%;
     transform: translateX(-50%);
     border: 0.7px solid @color-brand1;
