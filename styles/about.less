@@ -44,8 +44,6 @@ h1 {
   padding-left: 2.5%;
   width: 100%;
   margin-right: 10%;
-
-
 }
 
 .list li {
@@ -61,19 +59,43 @@ h1 {
   color: #000000;
   padding: 1.5% 0;
 }
-
-//.about-us-information ul{
-//  list-style-type: square;
-//}
-//.about-us-information ul li{
-//  font-weight: 400;
-//  font-size: 30px;
-//  line-height: 41px;
-//  color: #000000;
-//  margin: 3% 0;
-//}
+.logo-line{
+  display: flex;
+  justify-content: center;
+}
 .image-logo {
   margin-bottom: 10%;
   text-align: center;
+  width: 25%;
+
 }
 
+@media @mobile {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .list li {
+    padding: 2% 0;
+    color: @color-brand3;
+    font-size: 13px;
+  }
+
+  .list span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    padding: 1.5% 0;
+  }
+
+}

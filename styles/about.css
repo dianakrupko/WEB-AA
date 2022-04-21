@@ -226,8 +226,38 @@ h1 {
   color: #000000;
   padding: 1.5% 0;
 }
+.logo-line {
+  display: flex;
+  justify-content: center;
+}
 .image-logo {
   margin-bottom: 10%;
   text-align: center;
+  width: 25%;
+}
+@media (max-width: 480px) {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .name-page hr {
+    border-top: 1px solid #968F82;
+  }
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .list li {
+    padding: 2% 0;
+    color: #968F82;
+    font-size: 13px;
+  }
+  .list span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    padding: 1.5% 0;
+  }
 }
 /*# sourceMappingURL=about.css.map */

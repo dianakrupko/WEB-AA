@@ -212,22 +212,31 @@ h1 {
   flex-direction: row;
   margin: 4vh 0;
 }
+.product-photo {
+  width: 25%;
+}
 .product-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-left: 3vw;
+  margin-left: 2%;
+  flex-wrap: wrap;
 }
-.product a {
-  width: 18vw;
+.name-product {
+  width: 35%;
+}
+.product-information a {
+  display: block;
   font-weight: 600;
   font-size: 30px;
   line-height: 41px;
   text-transform: uppercase;
 }
-.product p {
+.product-information p {
+  width: 11%;
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
@@ -237,11 +246,11 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  width: 20vw;
+  width: 48%;
 }
 .product button {
   margin-left: 2%;
-  padding: 0.5vh 2vw;
+  padding: 0.5vh 3vw;
   background: none;
   border: 1px solid #968F82;
   box-sizing: border-box;
@@ -250,5 +259,51 @@ h1 {
   font-size: 21px;
   line-height: 29px;
   color: #968F82;
+}
+@media (max-width: 480px) {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .name-page hr {
+    border-top: 1px solid #968F82;
+  }
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .product-information {
+    align-items: flex-start;
+  }
+  .name-product {
+    width: 100%;
+  }
+  .product-information a {
+    width: 100%;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .product-information p {
+    font-size: 11px;
+    line-height: 16px;
+    width: 100%;
+  }
+  .product-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+  }
+  .product button {
+    margin-left: 0;
+    margin-right: 2%;
+    padding: 0.5vh 2vw;
+    background: none;
+    border: 0.5px solid #968F82;
+    box-sizing: border-box;
+    border-radius: 1.5px;
+    font-size: 8px;
+    line-height: 12px;
+  }
 }
 /*# sourceMappingURL=favorite.css.map */
