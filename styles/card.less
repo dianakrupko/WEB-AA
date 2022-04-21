@@ -11,13 +11,18 @@
   line-height: 27px;
   color: @color-brand3;
 }
-.info{
+
+.info {
   margin: 2% 0;
+}
+
+.title0 {
+  display: none;
 }
 
 .text-info {
   padding-top: 5%;
-  padding-left:3%;
+  padding-left: 3%;
 }
 
 .title {
@@ -29,13 +34,14 @@
 }
 
 .category {
-display: flex;
+  display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   width: 25vw;
 }
-.women, .men{
+
+.women, .men {
   width: 6.5vw;
   margin: 0 0.5vw;
 }
@@ -101,73 +107,85 @@ display: flex;
   line-height: 64px;
   padding: 0.2vh 4vw;
 }
-.like{
+
+.like {
   margin-left: 0.7vw;
 }
-.icon-favorite{
+
+.icon-favorite {
   font-size: 70px;
 }
-.description{
+
+.description {
   margin-bottom: 2%;
   width: 50%;
 }
-.description h2{
+
+.description h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 54px;
 
   color: @color-brand3;
 }
-.description h3{
+
+.description h3 {
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
 }
-.photo3{
+
+.im {
   margin-top: 1.5%;
   width: 100%;
 }
-.other{
+
+.other {
   margin: 5% 0;
   width: 100%;
 }
-.other-lines{
+
+.other-lines {
   margin: 3vh 0;
   display: flex;
   align-items: center;
 }
 
-hr {
+.other-lines hr {
   border: none;
   border-top: 3px solid @color-brand3;
   width: 5vw;
 }
 
-.other h2{
+.other h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 41px;
   margin: 0 0.7vw;
 }
-.product-info{
+
+.product-info {
   height: 10%;
   display: flex;
   justify-content: space-between;
 }
-.offers a{
+
+.offers a {
   font-weight: 300;
   font-size: 22px;
   line-height: 28px;
   color: #000000;
   width: 50%;
 }
-.offers h4{
+
+.offers h4 {
   font-weight: 600;
   font-size: 28px;
   line-height: 39px;
 
 }
-.offers button{
+
+.offers button {
   background: none;
   border: 1px solid @color-brand1;
   width: 100%;
@@ -175,4 +193,141 @@ hr {
   font-weight: 300;
   font-size: 30px;
   line-height: 41px;
+}
+
+@media @mobile {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .title0 {
+    display: block;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .women, .men {
+    width: 40%;
+    margin: 0 0.5vw;
+  }
+
+  .category h3 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .category .rectangle {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 0.5vh 0;
+  }
+
+  .price {
+    display: flex;
+    margin: 10% 0;
+  }
+
+  .price h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .price h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .cart-like button {
+    border: 1px solid @color-brand1;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0.2vh 7vw;
+  }
+
+  .icon-favorite {
+    font-size: 30px;
+  }
+
+  .description {
+    margin-bottom: 2%;
+    width: 50%;
+  }
+
+  .description h2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .description h3 {
+    font-size: 8px;
+    line-height: 13px;
+  }
+
+  .other {
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .other-lines {
+    margin: 3vh 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .other-lines hr {
+    border-top: 1.3px solid @color-brand3;
+    width: 5vw;
+  }
+
+  .other h2 {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .product-info {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offers a {
+    font-size: 6px;
+    line-height: 7px;
+    width: 50%;
+  }
+
+  .offers h4 {
+    font-size: 7px;
+    line-height: 10px;
+
+  }
+
+  .offers button {
+    border: 0.5px solid @color-brand1;
+    border-radius: 1.3px;
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+
 }
