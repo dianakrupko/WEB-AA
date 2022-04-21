@@ -9,13 +9,7 @@
 
 
 @mobile: ~"(max-width: 576px)";
-// Mode: Tablet
-@tablet: ~"(min-width: 768px)";
-@tablet-area: 750px;
-
-// Mode: Desktop
-@desktop: ~"(min-width: 1024px)";
-@desktop-area: 970px;
+@mobile-area: 320px;
 
 * {
   font-family: 'Noto Sans', sans-serif;
@@ -27,19 +21,19 @@ body {
   background-color: #ECECEC;
 }
 
-.container{
+.container {
   background: none;
   width: 1200px;
   padding: 0;
 }
+
 .image {
   width: 100%;
 }
 
 
 @media @mobile {
-  .container{
-    width: 320px;
+  .container {
+    width: @mobile-area
   }
-  
 }

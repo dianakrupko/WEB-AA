@@ -284,16 +284,11 @@ h1 {
     line-height: 25px;
   }
   .list li {
-    padding: 2% 0;
-    color: #968F82;
     font-size: 13px;
   }
   .list span {
-    font-weight: 400;
     font-size: 13px;
     line-height: 18px;
-    color: #000000;
-    padding: 1.5% 0;
   }
 }
 /*# sourceMappingURL=about.css.map */
