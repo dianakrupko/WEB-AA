@@ -92,20 +92,47 @@ h1 {
   line-height: 29px;
   color: @color-brand3;
 }
-@media @mobile {
+
+
+@media @desktop {
   .back a {
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .name-page hr {
-    border-top: 1px solid @color-brand3;
-  }
-
-  .name-page h1 {
     font-size: 18px;
     line-height: 25px;
   }
+
+  hr {
+    border-top: 2px solid @color-brand3;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .product-information a{
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .product-information p{
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .product button{
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media @tablet {
+  .back a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+
   .product-photo{
     width: 50%;
   }
@@ -119,13 +146,9 @@ h1 {
   }
   .product-information a{
     width: 100%;
-    font-size: 11px;
-    line-height: 16px;
   }
 
   .product-information p{
-    font-size: 11px;
-    line-height: 16px;
     width: 100%;
 
   }
@@ -143,6 +166,55 @@ h1 {
     border: 0.5px solid @color-brand3;
     box-sizing: border-box;
     border-radius: 1.5px;
+  }
+}
+@media @small {
+
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+  .product-information a{
+    font-size:17px;
+    line-height: 20px;
+  }
+
+  .product-information p{
+    font-size:17px;
+    line-height: 20px;
+
+  }
+  .product button{
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media @mobile {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .product-information a{
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .product-information p{
+    font-size: 11px;
+    line-height: 16px;
+
+  }
+  .product button{
     font-size: 8px;
     line-height: 12px;
   }

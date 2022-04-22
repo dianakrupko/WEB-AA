@@ -45,21 +45,22 @@
   line-height: 41px;
   z-index: 60;
 }
-.photo1{
+
+.photo1 {
   width: 40%;
   z-index: 20;
 }
+
 .photo2 {
   position: relative;
   width: 60%;
-  top:-5%;
+  top: -5%;
   left: 60%;
   z-index: 30;
 
 }
-.photo2-new{
-  display: none;
-}
+
+/*----Каталог-----------------------------------------------*/
 .catalog-row {
   display: flex;
   justify-content: space-between;
@@ -176,6 +177,7 @@
   width: 34%;
   text-align: center;
 }
+
 /*----Онлайн-консультація-----------------------*/
 .online-consultation {
   display: flex;
@@ -236,14 +238,270 @@
   color: @color-brand2;
 }
 
+
+@media @desktop {
+  .first h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .first span {
+    font-size: 25px;
+    line-height: 41px;
+    z-index: 50;
+  }
+
+  .first button {
+    background: none;
+    border: 1px solid @color-brand1;
+    border-radius: 10px;
+    width: 55%;
+    padding: 1% 3%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    z-index: 60;
+  }
+
+  .photo2 {
+    top: -10%;
+  }
+
+  /*----Каталог-------------*/
+  .product a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .product h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .go-to-catalog a {
+    font-size: 30px;
+  }
+
+  .go-to-catalog hr {
+    border-top: 1px solid @color-brand2;
+  }
+
+  /*----Сертифікати--------------------------*/
+  .certificate span {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .list li {
+    font-size: 25px;
+  }
+
+  .go-to-certificate a {
+    font-size: 30px;
+  }
+
+  /*----Онлайн-консультація-----------------------*/
+  .box h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .box input[type="tel"] {
+    padding: 3.5% 5%;
+    width: 70%;
+    border-radius: 0;
+    transition: 0.25s;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: @color-brand1;
+  }
+
+  .box input[type="tel"] {
+    padding: 4% 5%;
+    width: 25vw;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .box input[type="tel"]:focus {
+    border: 0.5px solid @color-brand3;
+  }
+
+  .call {
+    background: @color-brand2;
+    padding: 1% 3%;
+  }
+
+  .icon-call {
+    font-size: 20px;
+  }
+}
+
+@media @tablet {
+  .first h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .first span {
+    font-size: 20px;
+    line-height: 30px;
+    z-index: 50;
+  }
+
+  .first button {
+    border-radius: 7px;
+    font-size: 20px;
+    line-height: 35px;
+    z-index: 60;
+  }
+
+  .photo2 {
+    top: -10%;
+  }
+
+  /*----Каталог-------------*/
+  .product a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .product h4 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .go-to-catalog a {
+    font-size: 25px;
+  }
+
+  .go-to-catalog hr {
+    border-top: 1px solid @color-brand2;
+  }
+
+  /*----Сертифікати--------------------------*/
+  .certificate span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .list li {
+    font-size: 20px;
+  }
+
+  .go-to-certificate a {
+    font-size: 25px;
+  }
+
+  .go-to-certificate hr {
+    width: 40%;
+    border-top: 1px solid @color-brand2;
+  }
+
+  /*----Онлайн-консультація-----------------------*/
+  .box h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .box input[type="tel"] {
+    font-size: 15px;
+    line-height: 20px;
+    color: @color-brand1;
+  }
+
+  .box input[type="tel"] {
+    padding: 4% 5%;
+    width: 30vw;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .box input[type="tel"]:focus {
+    border: 0.5px solid @color-brand3;
+  }
+
+  .call {
+    background: @color-brand2;
+    padding: 1% 3%;
+  }
+
+  .icon-call {
+    font-size: 15px;
+  }
+}
+
+@media @small {
+
+  .first span {
+    font-size: 18px;
+    line-height: 25px;
+    z-index: 50;
+  }
+
+  .first button {
+    border-radius: 7px;
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 60;
+  }
+
+  /*----Каталог-------------*/
+  .product a {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .product h4 {
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .go-to-catalog a {
+    font-size: 17px;
+  }
+
+  .go-to-catalog hr {
+    border-top: 1px solid @color-brand2;
+  }
+
+  /*----Сертифікати--------------------------*/
+  .certificate span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .list li {
+    font-size: 15px;
+  }
+
+  .go-to-certificate a {
+    font-size: 17px;
+  }
+
+  .go-to-certificate hr {
+    width: 40%;
+    border-top: 1px solid @color-brand2;
+  }
+
+  /*----Онлайн-консультація-----------------------*/
+  .box h1 {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
 @media @mobile {
   .first {
     height: 100%;
     padding-bottom: 50%;
   }
-.text-info{
-  margin: 10% 0;
-}
+
+  .text-info {
+    margin: 10% 0;
+  }
+
   .first h1 {
     font-size: 18px;
     line-height: 25px;
@@ -261,12 +519,12 @@
     display: block;
     width: 60%;
     left: 0;
-    top:60%;
+    top: 60%;
   }
 
   .first span {
     position: absolute;
-    top:15%;
+    top: 15%;
     font-size: 15px;
     line-height: 20px;
     padding-right: 0;
@@ -327,16 +585,19 @@
     font-size: 8px;
     line-height: 15px;
   }
-  .go-to-certificate{
+
+  .go-to-certificate {
     display: flex;
     justify-content: center;
   }
+
   .go-to-certificate-line {
     display: inline-block;
     justify-content: center;
     text-align: center;
     width: 45%;
   }
+
   .go-to-certificate a {
     font-size: 13px;
     width: 100%;
@@ -346,10 +607,11 @@
     border-top: 1px solid @color-brand2;
     width: 100%;
   }
+
   /*----Онлайн-консультація------------------------------*/
   .box {
     border: 1px solid @color-brand3;
-    border-radius:4px;
+    border-radius: 4px;
     text-align: center;
   }
 
@@ -360,7 +622,7 @@
 
   .box input[type="tel"] {
     padding: 4% 5%;
-    width: 40vw;
+    width: 27vw;
     font-size: 8px;
     line-height: 11px;
   }

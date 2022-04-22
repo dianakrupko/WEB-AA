@@ -8,8 +8,18 @@
 @color-brand3: #968F82;
 
 
+@desktop: ~"(max-width: 1200px)";
+@desktop-area: 960px;
+
+@tablet: ~"(max-width: 992px)";
+@tablet-area: 720px;
+
+@small: ~"(max-width: 768px)";
+@small-area: 540px;
+
 @mobile: ~"(max-width: 576px)";
 @mobile-area: 320px;
+
 
 * {
   font-family: 'Noto Sans', sans-serif;
@@ -31,9 +41,28 @@ body {
   width: 100%;
 }
 
+@media @desktop {
+  .container {
+    width: @desktop-area;
+  }
+}
+
+@media @tablet {
+  .container {
+    width: @tablet-area;
+  }
+}
+
+@media @small {
+  .container {
+    width: @small-area;
+  }
+}
 
 @media @mobile {
   .container {
     width: @mobile-area
   }
 }
+
+
