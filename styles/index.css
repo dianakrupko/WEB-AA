@@ -415,7 +415,16 @@ input[type="email"] {
 .certificate {
   margin-bottom: 10%;
 }
-.certificate-row {
+.certificate-row1 {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0;
+  width: 100%;
+}
+.certificate .more-info {
+  display: none;
+}
+.certificate-row2 {
   display: flex;
   margin: 3% 0;
   width: 100%;
@@ -680,13 +689,20 @@ input[type="email"] {
     z-index: 60;
   }
   /*----Каталог-------------*/
+  .product {
+    width: 48%;
+  }
+  .im {
+    display: none;
+    width: 0;
+  }
   .product a {
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 18px;
   }
   .product h4 {
-    font-size: 11px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 18px;
   }
   .go-to-catalog a {
     font-size: 17px;
@@ -694,18 +710,54 @@ input[type="email"] {
   .go-to-catalog hr {
     border-top: 1px solid #B9AC92;
   }
-  /*----Сертифікати--------------------------*/
-  .certificate span {
-    font-size: 15px;
-    line-height: 20px;
+  .go-to-catalog {
+    margin-bottom: 3vh;
   }
-  .list li {
-    font-size: 15px;
+  /*----Сертифікати--------------------------*/
+  .certificate-row1 {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+    width: 100%;
+  }
+  .certificate-row2 {
+    display: none;
+  }
+  .certificate-image {
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .certificate-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin: 4% 0;
+  }
+  .certificate span {
+    font-size: 19px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  .certificate .more-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .more-info hr {
+    width: 33%;
+    border-top: 1px solid #B9AC92;
   }
   .go-to-certificate a {
+    display: none;
     font-size: 17px;
   }
   .go-to-certificate hr {
+    display: none;
     width: 40%;
     border-top: 1px solid #B9AC92;
   }
@@ -768,12 +820,12 @@ input[type="email"] {
     margin: 2% 0;
   }
   .product a {
-    font-size: 5px;
-    line-height: 6px;
+    font-size: 10px;
+    line-height: 13px;
   }
   .product h4 {
-    font-size: 6px;
-    line-height: 8px;
+    font-size: 10px;
+    line-height: 13px;
   }
   .go-to-catalog a {
     font-size: 10px;
@@ -784,33 +836,17 @@ input[type="email"] {
   }
   /*----Сертифікати-------------------------------------*/
   .certificate span {
-    font-size: 8px;
+    font-size: 11px;
     line-height: 15px;
     padding-left: 2%;
-  }
-  .list li {
-    padding: 1% 0;
-    color: #968F82;
-    font-size: 8px;
-    line-height: 15px;
   }
   .go-to-certificate {
     display: flex;
     justify-content: center;
   }
-  .go-to-certificate-line {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    width: 45%;
-  }
-  .go-to-certificate a {
-    font-size: 13px;
-    width: 100%;
-  }
-  .go-to-certificate hr {
-    border-top: 1px solid #B9AC92;
-    width: 100%;
+  .certificate .more-info {
+    font-size: 11px;
+    line-height: 15px;
   }
   /*----Онлайн-консультація------------------------------*/
   .box {
