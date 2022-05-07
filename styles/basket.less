@@ -40,9 +40,11 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-.product-photo{
+
+.product-photo {
   width: 18%;
 }
+
 .product .description {
   margin-left: 3%;
   padding: 7% 0;
@@ -103,6 +105,10 @@ h1 {
   color: @color-brand3;
 }
 
+.delete {
+  display: none;
+}
+
 .total-price-line {
   display: flex;
   justify-content: right;
@@ -138,6 +144,7 @@ h1 {
   line-height: 41px;
   color: @color-brand2;
 }
+
 /*----Оформлення замовлення-------------------------------*/
 .ordering div {
   margin: 2% 0;
@@ -180,7 +187,7 @@ h1 {
   background: none;
   border: 1px solid @color-brand3;
   padding: 1%;
-  width:42%;
+  width: 42%;
   font-weight: 400;
   font-size: 20px;
   color: @color-brand1;
@@ -200,14 +207,16 @@ h1 {
 label {
   cursor: pointer;
 }
-.radio{
+
+.radio {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   text-align: left;
   align-items: flex-start;
   width: 50%;
 }
+
 .ordering input[type="radio"] {
   -webkit-appearance: none;
   border: none;
@@ -272,6 +281,7 @@ label {
     font-size: 25px;
     line-height: 30px;
   }
+
   /*----Оформлення замовлення-------------------------------*/
   .ordering h2 {
     font-size: 25px;
@@ -304,14 +314,16 @@ label {
   label {
     cursor: pointer;
   }
-  .radio{
+
+  .radio {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     text-align: left;
     align-items: flex-start;
     width: 50%;
   }
+
   .ordering input[type="radio"] {
     -webkit-appearance: none;
     border: none;
@@ -325,6 +337,7 @@ label {
     background: url(../img/basket/rectangle.svg) left center no-repeat;
   }
 }
+
 @media @tablet {
   .back a {
     font-size: 15px;
@@ -337,7 +350,7 @@ label {
   }
 
 
-  .product-photo{
+  .product-photo {
     width: 30%;
   }
 
@@ -399,7 +412,7 @@ label {
   }
 
   /*----Оформлення замовлення*/
-  .ordering{
+  .ordering {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -410,7 +423,7 @@ label {
   .ordering h2 {
     font-size: 20px;
     line-height: 25px;
-    margin-bottom:3%;
+    margin-bottom: 3%;
   }
 
   .ordering p {
@@ -422,7 +435,6 @@ label {
   .ordering-button {
     text-align: right;
   }
-
 
 
   .ordering input[type="text"], input[type="tel"] {
@@ -450,18 +462,21 @@ label {
     background: url(../img/basket/rectangle-mobile.svg) left center no-repeat;
     background-size: 15px;
   }
-  .payment, .delivery{
+
+  .payment, .delivery {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .city-department{
+
+  .city-department {
     display: flex;
     flex-direction: column;
     width: 43%;
   }
-  .ordering input[name="city"],.ordering input[name="number-department"] {
+
+  .ordering input[name="city"], .ordering input[name="number-department"] {
     margin-left: 0;
     width: 100%;
     padding: 1%;
@@ -470,7 +485,7 @@ label {
   }
 
   .ordering-button {
-    text-align:center;
+    text-align: center;
   }
 
   .ordering-button button {
@@ -489,9 +504,11 @@ label {
   .name-page hr {
     border-top: 1px solid @color-brand3;
   }
-.product-photo{
-  width: 25%;
-}
+
+  .product-photo {
+    width: 25%;
+  }
+
   .product a {
     font-size: 17px;
     line-height: 20px;
@@ -515,6 +532,20 @@ label {
   .number span {
     font-size: 13px;
     line-height: 15px;
+  }
+
+  .remove {
+    display: none;
+  }
+
+  .delete {
+    display: flex;
+  }
+
+  .total-price hr{
+    border: none;
+    height: 1px;
+    background: @color-brand3;
   }
   .total-price p {
     font-size: 13px;
@@ -557,7 +588,7 @@ label {
     background-size: 15px;
   }
 
-  .ordering input[name="city"],.ordering input[name="number-department"] {
+  .ordering input[name="city"], .ordering input[name="number-department"] {
     font-size: 13px;
     line-height: 15px;
   }
@@ -567,6 +598,7 @@ label {
     line-height: 20px;
   }
 }
+
 @media @mobile {
   .back a {
     font-size: 13px;
@@ -609,7 +641,7 @@ label {
   }
 
   .total-price hr {
-    border-top: 0.3px solid @color-brand3;
+height: 0.2px;
   }
 
   .total-price p {
@@ -632,6 +664,7 @@ label {
     font-size: 11px;
     line-height: 16px;
   }
+
   .ordering-button button {
     font-size: 35px;
   }
@@ -653,7 +686,7 @@ label {
     background-size: 10px;
   }
 
-  .ordering input[name="city"],.ordering input[name="number-department"] {
+  .ordering input[name="city"], .ordering input[name="number-department"] {
     font-size: 10px;
   }
 

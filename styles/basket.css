@@ -402,6 +402,9 @@ h1 {
   line-height: 29px;
   color: #968F82;
 }
+.delete {
+  display: none;
+}
 .total-price-line {
   display: flex;
   justify-content: right;
@@ -751,6 +754,17 @@ label {
     font-size: 13px;
     line-height: 15px;
   }
+  .remove {
+    display: none;
+  }
+  .delete {
+    display: flex;
+  }
+  .total-price hr {
+    border: none;
+    height: 1px;
+    background: #968F82;
+  }
   .total-price p {
     font-size: 13px;
     line-height: 15px;
@@ -829,7 +843,7 @@ label {
     color: #968F82;
   }
   .total-price hr {
-    border-top: 0.3px solid #968F82;
+    height: 0.2px;
   }
   .total-price p {
     font-size: 10px;

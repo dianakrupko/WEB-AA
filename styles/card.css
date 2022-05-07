@@ -405,6 +405,9 @@ input[type="email"] {
 .icon-favorite {
   font-size: 70px;
 }
+.slider {
+  display: none;
+}
 .description {
   margin-bottom: 2%;
   width: 50%;
@@ -657,9 +660,26 @@ input[type="email"] {
   .icon-favorite {
     font-size: 40px;
   }
+  .slider {
+    display: flex;
+    transform: translateX(25%);
+  }
+  .slider hr {
+    border-radius: 2px;
+    background: #968F82;
+    height: 4px;
+    width: 15%;
+    margin: 1vh 0.5vw;
+  }
+  .slider hr:first-child {
+    background: #412F0E;
+  }
   .description {
     margin-bottom: 2%;
     width: 55%;
+  }
+  .photo {
+    display: none;
   }
   .description h2 {
     font-weight: 400;
@@ -772,6 +792,9 @@ input[type="email"] {
   .description {
     margin-bottom: 2%;
     width: 50%;
+  }
+  .slider hr {
+    height: 2px;
   }
   .description h2 {
     font-weight: 400;
