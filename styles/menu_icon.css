@@ -1,0 +1,126 @@
+@import "removal.css";
+@import "bootstrap-grid.min.css";
+@import "icons.css";
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0OIpQlx3QUlC5A4PNjhjRF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjThZlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0IIpQlx3QUlC5A4PNb4g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjFhdlYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosans/v26/o-0NIpQlx3QUlC5A4PNjOhBlYw.ttf) format('truetype');
+}
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  color: #412F0E;
+}
+body {
+  background-color: #ECECEC;
+}
+.container {
+  background: none;
+  width: 1200px;
+  padding: 0;
+}
+.image {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 320px;
+  }
+}
+#sidebar {
+  position: fixed;
+  margin-left: 20vw;
+  width: 80vw;
+  background: #ECECEC;
+  border: 0.5px solid #412F0E;
+  right: -80vw;
+  border-radius: 5px;
+  -moz-transition: all 600ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+#sidebar.active {
+  right: 0;
+}
+#sidebar.active .toggle-btn {
+  display: none;
+}
+#sidebar .close {
+  margin-top: 25px;
+  position: relative;
+  display: inline;
+  left: 95%;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: #412F0E;
+  font-size: 20px;
+  list-style: none;
+  padding-bottom: 25px;
+  font-weight: 400;
+  line-height: 27px;
+}
+#sidebar ul li:not(:first-child) {
+  text-align: center;
+  list-style: none;
+  padding: 15px 0;
+}
+#sidebar ul li a {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #412F0E;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  right: 90vw;
+  top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=menu_icon.css.map */

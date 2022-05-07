@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+<!--    <link rel="stylesheet" href="styles/identical.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="js/menu.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="header-container container">
+        <div class="component-left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <nav class="header-menu menu">
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">Головна</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="catalog.html" class="menu-link">Каталог</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="component-right">
+            <a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a>
+            <div class="like-basket">
+                <a href="favorite.html"><i class="icon-like"></i></a>
+                <a href="basket.html"><i class="icon-basket"></i></a>
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick="openMenu()">
+                        <i class="icon-menu"></i>
+                    </div>
+                    <div class="name-menu">
+                        <img class="close" onclick="closeMenu()" src="img/index/close.svg" alt="close">
+                    </div>
+                    <ul>
+                        <li>Меню сайту</li>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="basket.html">Корзина</a></li>
+                        <li><a href="favorite.html">Вподобані</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
