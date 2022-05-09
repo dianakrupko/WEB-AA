@@ -1,16 +1,19 @@
 @import "identical";
+
 header {
   display: flex;
   background-color: @color-brand2;
   height: 10vh;
   align-items: center;
 }
+
 header .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .header-menu{
+
+header .header-menu {
   margin: 0 0 0 2.5vw;
 }
 
@@ -43,8 +46,9 @@ header .component-right {
   align-items: center;
   //justify-content: right;
 }
-header .like-basket i{
-  margin-left:0.5vw;
+
+header .like-basket i {
+  margin-left: 0.5vw;
 }
 
 header .like-basket {
@@ -61,16 +65,18 @@ header .like-basket {
 header .number-phone {
   font-weight: 300;
   font-size: 20px;
-  line-height: calc(27/20*100%);
+  line-height: calc(27 / 20 * 100%);
 }
-//header .icon-menu{
-//  display: none;
-//}
 
-header #sidebar .toggle-btn{
+header #sidebar .toggle-btn {
   display: none;
 }
-.func{
+
+header #sidebar .box-menu {
+  display: none;
+}
+
+header #sidebar {
   display: none;
 }
 
@@ -88,45 +94,40 @@ header #sidebar .toggle-btn{
     font-size: 40px;
     width: 45%;
   }
+
   header .number-phone {
     font-size: 15px;
     line-height: 20px;
     width: 70%;
   }
 }
-@media  @small {
+
+@media @small {
   header .component-left .menu-list {
     display: none;
   }
 
   header #sidebar {
-    display: block ;
-    position: fixed;
-    top:0;
-    margin-left: 20vw;
+    display: block;
+  }
+
+  header #sidebar .toggle-btn {
+    display: flex;
+  }
+
+  header #sidebar .box-menu {
+    display: none;
+    position: absolute;
+    top: 10vh;
     width: 80vw;
-    background: #ECECEC;
+    background: #D9D9D9;
     border: 0.5px solid @color-brand1;
-    right: -95vw;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 3px;
-
-    -moz-transition: all 600ms;
-    -webkit-transition: all 600ms;
-    transition: all 600ms;
   }
 
-  #sidebar.active{
-    right: -12vw;
-
-    .toggle-btn{
-      display: none;
-    }
-    .component-right{
-      transform: translateX(-8vw);
-    }
-  }
-
-  #sidebar .close{
+  #sidebar .close {
     margin-top: 1vh;
     height: 3vh;
     position: relative;
@@ -134,11 +135,12 @@ header #sidebar .toggle-btn{
     left: 93%;
   }
 
-  #sidebar hr{
+  #sidebar hr {
     width: 100%;
     height: 0.5px;
     background: @color-brand1;
   }
+
   #sidebar ul li:first-child {
     text-align: center;
     line-height: 5vh;
@@ -146,7 +148,7 @@ header #sidebar .toggle-btn{
     color: @color-brand1;
     font-size: 20px;
     list-style: none;
-    margin-bottom:0.7vh ;
+    margin-bottom: 0.7vh;
     font-weight: 400;
 
   }
@@ -161,41 +163,43 @@ header #sidebar .toggle-btn{
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
-    color:@color-brand1;
+    color: @color-brand1;
   }
+  #sidebar.active {
+    display: block;
+    //right: -12vw;
 
-  header #sidebar .toggle-btn{
-    display: flex;
-    right: 87vw;
-    position: absolute;
-    cursor: pointer;
-  }
-  header .component-right{
-    transform: translateX(-8vw);
+    .toggle-btn {
+      display: none;
+    }
+
+    .box-menu {
+      display: block;
+      z-index: 1000;
+    }
   }
 }
-@media @mobile {
-  header .like-basket {
-    font-size: 30px;
-    width: 20%;
+  @media @mobile {
+    header .like-basket {
+      font-size: 30px;
+      width: 20%;
+    }
+
+    header .number-phone {
+      width: 50%;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    header #sidebar .box-menu {
+      display: none;
+      position: absolute;
+      top: 10vh;
+      width: 70vw;
+      background: #D9D9D9;
+      border: 0.5px solid @color-brand1;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 3px;
+    }
   }
 
-  header .number-phone {
-    width: 50%;
-    font-size: 10px;
-    line-height: 15px;
-  }
-  header #sidebar {
-    margin-left: 30vw;
-    width: 70vw;
-    right: -95vw;
-  }
-
-  #sidebar.active{
-    right: -23vw;
-  }
-  #sidebar .close{
-    left: 88%;
-  }
-
-}

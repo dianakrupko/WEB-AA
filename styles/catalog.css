@@ -121,12 +121,15 @@ header .like-basket {
 header .number-phone {
   font-weight: 300;
   font-size: 20px;
-  line-height: calc(27/20*100%);
+  line-height: calc(27 / 20 * 100%);
 }
 header #sidebar .toggle-btn {
   display: none;
 }
-.func {
+header #sidebar .box-menu {
+  display: none;
+}
+header #sidebar {
   display: none;
 }
 @media (max-width: 992px) {
@@ -150,27 +153,21 @@ header #sidebar .toggle-btn {
     display: none;
   }
   header #sidebar {
-    display: block ;
-    position: fixed;
-    top: 0;
-    margin-left: 20vw;
-    width: 80vw;
-    background: #ECECEC;
-    border: 0.5px solid #412F0E;
-    right: -95vw;
-    border-radius: 3px;
-    -moz-transition: all 600ms;
-    -webkit-transition: all 600ms;
-    transition: all 600ms;
+    display: block;
   }
-  #sidebar.active {
-    right: -12vw;
+  header #sidebar .toggle-btn {
+    display: flex;
   }
-  #sidebar.active .toggle-btn {
+  header #sidebar .box-menu {
     display: none;
-  }
-  #sidebar.active .component-right {
-    transform: translateX(-8vw);
+    position: absolute;
+    top: 10vh;
+    width: 80vw;
+    background: #D9D9D9;
+    border: 0.5px solid #412F0E;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
   }
   #sidebar .close {
     margin-top: 1vh;
@@ -205,14 +202,15 @@ header #sidebar .toggle-btn {
     line-height: 20px;
     color: #412F0E;
   }
-  header #sidebar .toggle-btn {
-    display: flex;
-    right: 87vw;
-    position: absolute;
-    cursor: pointer;
+  #sidebar.active {
+    display: block;
   }
-  header .component-right {
-    transform: translateX(-8vw);
+  #sidebar.active .toggle-btn {
+    display: none;
+  }
+  #sidebar.active .box-menu {
+    display: block;
+    z-index: 1000;
   }
 }
 @media (max-width: 576px) {
@@ -225,16 +223,16 @@ header #sidebar .toggle-btn {
     font-size: 10px;
     line-height: 15px;
   }
-  header #sidebar {
-    margin-left: 30vw;
+  header #sidebar .box-menu {
+    display: none;
+    position: absolute;
+    top: 10vh;
     width: 70vw;
-    right: -95vw;
-  }
-  #sidebar.active {
-    right: -23vw;
-  }
-  #sidebar .close {
-    left: 88%;
+    background: #D9D9D9;
+    border: 0.5px solid #412F0E;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
   }
 }
 footer {
