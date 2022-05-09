@@ -28,11 +28,29 @@
             </nav>
         </div>
         <div class="component-right">
-            <a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a>
+
+            <div><a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a></div>
             <div class="like-basket">
-                <a href="favorite.html"><i class="icon-like"></i></a>
-                <a href="basket.html"><i class="icon-basket"></i></a>
-                <a href="#"><i class="icon-menu"></i></a>
+                <div><a href="favorite.html"><i class="icon-like"></i></a></div>
+                <div><a href="basket.html"><i class="icon-basket"></i></a></div>
+                <div id="sidebar" class="func">
+                    <div class="toggle-btn" onclick="openMenu()">
+                        <i class="icon-menu"></i>
+                    </div>
+                    <div class="name-menu">
+                        <img class="close" onclick="closeMenu()" src="img/index/close.svg" alt="close">
+                    </div>
+
+                    <ul>
+                        <li>Меню сайту</li>
+                        <hr>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="basket.html">Корзина</a></li>
+                        <li><a href="favorite.html">Вподобані</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

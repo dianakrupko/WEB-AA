@@ -1,5 +1,4 @@
 @import "identical";
-
 header {
   display: flex;
   background-color: @color-brand2;
@@ -40,18 +39,24 @@ header .component-left {
 
 header .component-right {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: right;
+  //justify-content: right;
+}
+header .like-basket i{
+  margin-left:0.5vw;
 }
 
 header .like-basket {
+  display: flex;
+  flex-direction: row;
   font-size: 40px;
   margin-left: 0.5vw;
 }
 
-header .component-right a {
-  margin-left: 0.3vw;
-}
+//header .component-right a {
+//  margin-left: 0.3vw;
+//}
 
 header .number-phone {
   font-weight: 300;
@@ -61,10 +66,11 @@ header .number-phone {
 //header .icon-menu{
 //  display: none;
 //}
-header #sidebar{
+
+header #sidebar .toggle-btn{
   display: none;
 }
-#sidebar{
+.func{
   display: none;
 }
 
@@ -78,7 +84,7 @@ header #sidebar{
 
   header .like-basket {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     font-size: 40px;
     width: 45%;
   }
@@ -93,7 +99,7 @@ header #sidebar{
     display: none;
   }
 
-  #sidebar {
+  header #sidebar {
     display: block ;
     position: fixed;
     top:0;
@@ -101,7 +107,7 @@ header #sidebar{
     width: 80vw;
     background: #ECECEC;
     border: 0.5px solid @color-brand1;
-    right: -80vw;
+    right: -95vw;
     border-radius: 3px;
 
     -moz-transition: all 600ms;
@@ -110,10 +116,13 @@ header #sidebar{
   }
 
   #sidebar.active{
-    right: 0;
+    right: -12vw;
 
     .toggle-btn{
       display: none;
+    }
+    .component-right{
+      transform: translateX(-8vw);
     }
   }
 
@@ -155,29 +164,20 @@ header #sidebar{
     color:@color-brand1;
   }
 
-  .toggle-btn {
+  header #sidebar .toggle-btn{
+    display: flex;
+    right: 87vw;
     position: absolute;
-    right: 77vw;
-    top: 22px;
-    padding: 10px;
     cursor: pointer;
   }
-
-  header .like-basket {
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    width: 45%;
-  }
-  header .number-phone {
-    font-size: 15px;
-    line-height: 20px;
+  header .component-right{
+    transform: translateX(-8vw);
   }
 }
 @media @mobile {
   header .like-basket {
     font-size: 30px;
-    width: 45%;
+    width: 20%;
   }
 
   header .number-phone {
@@ -185,15 +185,17 @@ header #sidebar{
     font-size: 10px;
     line-height: 15px;
   }
-
-  #sidebar {
-    margin-left: 32vw;
-    width: 68vw;
-    background: #ECECEC;
-    right: -68vw;
+  header #sidebar {
+    margin-left: 30vw;
+    width: 70vw;
+    right: -95vw;
   }
-  .toggle-btn {
-    right: 72vw;
+
+  #sidebar.active{
+    right: -23vw;
+  }
+  #sidebar .close{
+    left: 88%;
   }
 
 }
