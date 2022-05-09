@@ -143,7 +143,7 @@ header #sidebar {
     width: 45%;
   }
   header .number-phone {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
     width: 70%;
   }
@@ -164,7 +164,7 @@ header #sidebar {
     top: 10vh;
     width: 80vw;
     background: #C4C4C4;
-    border: 0.5px solid #412F0E;
+    border: 1px solid #412F0E;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 3px;
@@ -178,7 +178,8 @@ header #sidebar {
   #sidebar hr {
     width: 100%;
     height: 0.5px;
-    background: #412F0E;
+    margin-top: 2vh;
+    border: 0.1px solid #412F0E;
   }
   #sidebar ul li:first-child {
     text-align: center;
